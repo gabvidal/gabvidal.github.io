@@ -1,0 +1,63 @@
+//Función para traer datos de la API//
+function traerdatos(){
+
+    fetch("https://randomuser.me/api/")
+    .then(res => res.json())
+    .then(data => {
+        completar(data)
+    });
+}
+
+// Inserta foto, Nombre y Apellido en Header //
+function completar(datos){
+    console.log(datos);
+    //cambio de SRC imagen header//
+    const fuente = datos.results[0].picture.large;
+    const edad = datos.results[0].dob.age;
+  
+    //tratamiento de fecha//
+    let fecha= new Date(datos.results[0].dob.date);
+    const dia = fecha.getDate();
+    const mes = (fecha.getMonth() + 1);
+    const ano = fecha.getFullYear();
+    fecha = dia+"/"+mes+"/"+ano;    
+   
+    const domicilio = datos.results[0].location.street.name +" "+ datos.results[0].location.street.number +" CP:"+datos.results[0].location.postcode;
+    const provincia = datos.results[0].location.state;
+    const pais = datos.results[0].location.country;
+    console.log(fuente);
+    document.getElementById("foto").src=fuente;
+    const nombre = (datos.results[0].name.first +" "+ datos.results[0].name.last);
+    document.getElementById("nombre").innerHTML= "Curriculum Vitae de "+nombre;
+    document.getElementById("nombre_b").innerHTML= "<b>Nombre y apellido: </b>"+nombre;
+    document.getElementById("Fecha").innerHTML= "<b>Fecha de Nacimiento: </b>"+ fecha;
+    document.getElementById("edad").innerHTML= "<b>Edad: </b>"+edad;
+    document.getElementById("domicilio").innerHTML= "<b>Domicilio: </b>"+domicilio;
+    document.getElementById("provincia").innerHTML= "<b>Provincia: </b>"+provincia;
+    document.getElementById("pais").innerHTML= "<b>País: </b>"+pais;  
+      
+}
+traerdatos();
+
+//Guardar formulario de consulta en LocalStorage//
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("formulario").addEventListener('submit', cargarDatos); 
+  });
+  
+  function cargarDatos(evento) {
+    let nombreLS = document.getElementById("nombreF").value;
+    localStorage.setItem("nombre", nombreLS);
+    
+    let emailLS = document.getElementById("e-mailF").value;
+    localStorage.setItem("email", emailLS);
+    
+    let telefonoLS = document.getElementById("telefonoF").value;
+    localStorage.setItem("telefono", telefonoLS);
+    
+    let consultaLS = document.getElementById("consultaF").value;
+    localStorage.setItem("consulta", consultaLS);
+
+    window.alert("Acepte para enviar la consulta, a la brevedad será respondida. Muchas gracias.")
+
+  }

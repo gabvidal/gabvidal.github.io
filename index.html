@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="FA/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fuentes de Fonts Awesone para iconos de redes y correo-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat&family=Open+Sans&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <title>Proyecto CV</title>
+    <link rel="stylesheet" href="css/estilo.css" id="estilo">
+</head>
+<body>
+    <div class="contenedor">
+            <header class="header">
+                <div class="menu">
+                    <div class="foto">
+                        <a href="index.html"><img src="" id="foto" alt="foto perfil" class="foto_perfil"></a>
+                    </div>
+                    <nav class="nav"></nav>
+                    <div class="texto_principal">
+                        <!--h1  se completa en JS -->
+                        <h1 id="nombre"></h1>    
+                    </div>
+                </div>
+                <div class="social">
+                    <div>
+                        <a href="https://www.facebook.com/">Facebook<i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://twitter.com/">Twitter<i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/gabvidal/curso">GitHub<i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>    
+            <section class="section">
+                <div class="articulos">
+                    <article class="article">                                                
+                        <h2 class="titulo">Biografía</h2> 
+                        <div class="separador">
+                        </div>
+                        <div class="contenedor_articulo">                          
+                            <p id="nombre_b"></p>
+                            <p id="Fecha"></p>
+                            <p id="edad"></p>                    
+                            <p id="domicilio"></p>
+                            <p id="provincia"></p>
+                            <p id="pais"></p>                            
+                        </div>
+
+                    </article>
+                    <article class="article">                                               
+                        <h2 class="titulo">Estudios</h2>
+                        <div class="separador">
+                        </div> 
+                        <div class="contenedor_articulo">                        
+                            <h4>Primario</h4>
+                            <p> St tropez School- 1990-1999</p>
+                            <h4>Secundario</h4>
+                            <P>St tropez School - 2000-2003</P>
+                            <h4>Universitario</h4>
+                            <p>UFF University 2004-2010, título: Ingeniero en informatica</p>
+                            <h4>Postgrado</h4>
+                            <p>ETT - 2015, postgrado: Sistemas de control integral</p>
+                        </div>
+                    </article>
+                </div>
+            
+                <aside class="aside">
+                    <div class="formulario">
+                       
+                        <form action="" class="form" id="formulario">
+                            <div class="encabezado">
+                                <h3>Contacto</h3>
+                            </div>
+
+                            <label for="nombre" class="etiqueta">Nombre:</label>
+                            <input type="text" class="cajon" id="nombreF" placeholder="Ingresa tu nombre" autofocus required>
+
+                            <label for="e-mail" class="etiqueta">E-mail:</label>
+                            <input type="email" class="cajon" id="e-mailF" placeholder="Ingresa tu e-mail" required>
+                           
+                            <label for="telefono" class="etiqueta">Teléfono:</label>
+                            <input type="number" class="cajon" id="telefonoF" placeholder="Ingresa tu telefono">
+                            
+                            <label for="consulta" class="etiqueta">Consulta:</label>
+                            <textarea id="consultaF" class="cajon" placeholder="Escriba aquí su consulta"></textarea>
+
+                            <input type="submit" class="boton" value="Enviar consulta" id="enviar">
+                            
+                        </form>
+                    </div>
+                </aside>
+            </section>
+            <footer class="footer">
+                <div class="diseno">
+                    <img src="imagenes/Milogo.png" alt="Logo Gabriel Vidal" class="milogo">
+                    <h4>Web Desing by</h4>
+                    <p>Gabriel Vidal - 2023</p>                    
+                </div>    
+                <div class="correo">
+                    <i class="fa-solid fa-envelope"></i>    
+                    <a href="mailto:gavidal@gmail.com" class="correo_direccion">gavidal@gmail.com</a>
+                </div>
+            </footer>
+    </div>
+    <script src="../Proyecto CV/JavaScript"></script>    
+</body>
+
+</html>
