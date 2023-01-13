@@ -73,12 +73,13 @@ body{
 
     .section{
         background: #F8EDE3;
-        display: flex;       
+        display: flex;
+        flex-direction: column;       
     }
         .articulos{
             display: flex;
             background: #f3eded;
-            flex: 2 1 auto;
+            flex: 1 1 100%;
             flex-direction: row;
             
             
@@ -88,8 +89,9 @@ body{
                 background: #ECE9E6;  /* fallback for old browsers */
                 background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
                 background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-                flex: 1 1 40%;
+                display: flex;
+                flex: 1 1 auto;
+                flex-direction: column;
                 margin:10px;
                 padding:10px;
                 border-radius: 3px;
@@ -115,8 +117,12 @@ body{
                     
                 }
     .aside{
+        display: flex;
+        flex-direction: column;
         background:#F8EDE3;
-        flex: 1 1 auto;
+        display:flex;
+        width: 100%;
+        
         
     }
         .formulario{
@@ -227,7 +233,11 @@ body{
         border-style:groove;
 
     }
-
+#exp{
+    flex:2 1 100% ;
+    flex-direction: column;
+    width: 100%;
+}
 
 
 /** Media Query para responsivo a menor de 800px **/
