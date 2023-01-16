@@ -8,15 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!-- Fuentes de Fonts Awesone para iconos de redes y correo-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat&family=Open+Sans&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
     <title>Proyecto CV</title>
-    <link rel="stylesheet" href="CSS/estilo.css" id="estilo">
+    <link rel="stylesheet" href="css/estilo.css" id="estilo">
 </head>
 <body>
     <div class="contenedor">
             <header class="header">
                 <div class="menu">
                     <div class="foto">
+                        <!-- el Source de la foto es traida de la API desde JS-->
                         <a href="index.html"><img src="" id="foto" alt="foto perfil" class="foto_perfil"></a>
                     </div>
                     <nav class="nav"></nav>
@@ -43,6 +45,7 @@
                         <h2 class="titulo">Biografía</h2> 
                         <div class="separador">
                         </div>
+                        <!--Los datos son traidos desde JS apuntando a la API-->
                         <div class="contenedor_articulo">                          
                             <p id="nombre_b"></p>
                             <p id="Fecha"></p>
@@ -51,24 +54,24 @@
                             <p id="provincia"></p>
                             <p id="pais"></p>                            
                         </div>
-
                     </article>
                     <article class="article">                                               
                         <h2 class="titulo">Estudios</h2>
                         <div class="separador">
                         </div> 
-                        <div class="contenedor_articulo">                        
-                            <h4>Primario</h4>
-                            <p> St tropez School- 1990-1999</p>
-                            <h4>Secundario</h4>
-                            <P>St tropez School - 2000-2003</P>
-                            <h4>Universitario</h4>
-                            <p>UFF University 2004-2010, título: Ingeniero en informatica</p>
+                        <div class="contenedor_articulo">
                             <h4>Postgrado</h4>
                             <p>ETT - 2015, postgrado: Sistemas de control integral</p>
+                            <h4>Universitario</h4>
+                            <p>UFF University 2004-2010, título: Ingeniero en informatica</p>
+                            <h4>Secundario</h4>
+                            <P>St tropez School - 2000-2003</P>                        
+                            <h4>Primario</h4>
+                            <p> St tropez School- 1990-1999</p>                          
                         </div>
                     </article>
                 </article>
+                <!-- A Experincia se le agrega id "exp", con el fin de darle dimensiones distintas en CSS-->
                 <article class="article" id="exp">                                               
                     <h2 class="titulo">Experiencia</h2>
                     <div class="separador">
@@ -97,8 +100,8 @@
                     <div class="formulario">
                        
                         <form action="" class="form" id="formulario">
-                            <div class="encabezado">
-                                <h3>Contacto</h3>
+                            <div class="encabezado">                                
+                                <h3><i class="fa-solid fa-address-card"></i> Contacto</h3>
                             </div>
 
                             <label for="nombre" class="etiqueta">Nombre:</label>
@@ -122,7 +125,7 @@
             <footer class="footer">
                 <div class="diseno">
                     <img src="imagenes/Milogo.png" alt="Logo Gabriel Vidal" class="milogo">
-                    <h4>Web Desing by</h4>
+                    <h4>Diseño Web por</h4>
                     <p>Gabriel Vidal - 2023</p>                    
                 </div>    
                 <div class="correo">
