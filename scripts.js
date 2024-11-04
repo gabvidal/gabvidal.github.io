@@ -56,7 +56,7 @@ function selectProfile(profile) {
             ]
         },
         constructor: {
-            photo: "Fotos/Constructor2.jpg",
+            photo: "Fotos/constructor2.jpg",
             title: "Constructor",
             training: [
                 { title: "Curso Empírico de Construcción", description: "Aprendizaje en tiempo real, donde la observación y el conocimiento adquirido se utilizan para construir nuevas habilidades. Esta experiencia ha sido una constante fuente de inspiración, reforzando lo aprendido y permitiéndome reformular mis enfoques a partir de las lecciones de las malas experiencias. Además, me ha ayudado a aprender de las experiencias ajenas y las ideas de otros; amigos y allegados aportaron valiosas perspectivas que rompieron mis sesgos y ampliaron mis márgenes de pensamiento." }
