@@ -175,6 +175,11 @@ h3 {
     .profile-options {
         flex-direction: column;
     }
+    }
+    .details-section {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
 /* Keyframes for Typing and Erasing Effects */
