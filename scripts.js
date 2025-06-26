@@ -32,7 +32,18 @@ function selectProfile(profile) {
                 { title: "Primeros pasos del desarrollo frontend", description: "TICMAS - 2022" }
             ],
             experience: [
-                { title: "Apasionado por comenzar mi camino en el desarrollo Front End", description: "Profesional motivado y en constante evolución, con una base sólida en atención y soporte técnico que ha despertado mi interés en el desarrollo front-end. A través de mi experiencia en la mesa de ayuda, descubrí una pasión por crear y optimizar interfaces que mejoren la experiencia del usuario. Me he capacitado en tecnologías como HTML, CSS y JavaScript, y estoy preparado para aplicar estos conocimientos en un entorno profesional. Mi objetivo es contribuir con soluciones visuales y funcionales en un equipo comprometido con la innovación y la calidad. Te invito a visitar mi perfil como agente de ayuda." }
+                      {
+                        title: "Desarrollador Front End – DNRPA </br> Desde 01/01/2025",
+                        description: `
+                    Trabajo actualmente en el equipo de desarrollo de la DNRPA, enfocado en la digitalización de procesos internos y mejora de la experiencia de usuario en el sistema de gestión de piezas reutilizables. Desarrollo interfaces modernas con React, Vite y TypeScript, validación avanzada con React Hook Form y Zod, carga y edición de archivos, generación automática de formularios PDF, y conexión con servicios API RESTful.
+                    
+                    Participo activamente en el diseño de componentes reutilizables, control de flujo de estados, paginación de datos y migración de formularios físicos a plataformas digitales. El proyecto cumple un rol clave en la trazabilidad y control documental de vehículos dados de baja o desarmados.`
+                      },  
+                {
+                    title: "Proyectos Freelance y Personales",
+                    description: `
+                Además de mi rol actual, llevo adelante un proyecto personal con integración de Firebase (Auth y Firestore), validación de formularios, lógica de precios para sistemas de venta, previsualización y recorte de imágenes, construcción de componentes visuales reutilizables y pruebas de integración.`
+                  },            
             ]
         },
         helpdesk: {
