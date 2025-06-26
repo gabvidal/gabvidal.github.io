@@ -50,13 +50,15 @@ h3 {
     transition: opacity 1s ease;
 }
 .intro-content {
-    flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* espacio entre nombre e ícono */
 }
 #linkedin-link {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+  display: flex;
+  align-items: center;
+  color: #0077b5;
+  text-decoration: none;
 }
 
 /* Name Typing Effect */
