@@ -52,7 +52,7 @@ h3 {
 .intro-content {
   display: flex;
   align-items: center;
-  gap: 10px; /* espacio entre nombre e ícono */
+  gap: 4px; /* espacio entre nombre e ícono */
 }
 #linkedin-link {
   display: flex;
