@@ -52,6 +52,12 @@ h3 {
 .intro-content {
     flex: 1;
 }
+#linkedin-link {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
 
 /* Name Typing Effect */
 .name-title {
